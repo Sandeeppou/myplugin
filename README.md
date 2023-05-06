@@ -25,14 +25,12 @@ The Custom Plugin includes the following features:
 * Custom Post Types: Allows you to create custom post types that are not supported by the default installation of WordPress.
 * Custom Widgets: Allows you to create custom widgets to display information or perform actions on your site.
 * Custom Taxonomy: Allows you to add categories but it is still in progress.
-* Custom CSS: Lets you add custom CSS to your website without modifying the theme files.
-* Custom JavaScript: Allows you to add custom JavaScript to your website without modifying the theme files.
 
 # Support
 If you encounter any issues or have any questions about this plugin, please contact us via the support forum on WordPress.org. We will do our best to respond to your inquiry as soon as possible.
 
 # Contributing
-If you would like to contribute to the development of this plugin, please submit a pull request on GitHub. We welcome contributions from anyone who is interested in improving this plugin.
+If you would like to contribute to the development of this plugin, please submit a pull request on GitHub. You are more than welcome to contribute from anyone who is interested in improving this plugin.
 
 # License
 This plugin is released under the GPL license. You are free to modify and distribute this plugin as long as you comply with the terms of the GPL.	
