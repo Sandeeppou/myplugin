@@ -31,10 +31,6 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA.
 Copyright 2005-2015 Automatic, Inc.
 */
 
-use sandeep\Base\Activate;
-use sandeep\Base\Deactivate;
-
-
 defined ( 'ABSPATH' ) or die('Hey, you cannot access this file.');
 
 //Require once the Composer Autoload
@@ -42,27 +38,20 @@ if( file_exists( dirname(__FILE__). '/vendor/autoload.php')){
 	require_once dirname( __FILE__) . '/vendor/autoload.php';
 }
 
- //Define CONSTANTS
-define( 'PLUGIN_PATH', plugin_dir_path(__FILE__));
-define( 'PLUGIN_URL', plugin_dir_url(__FILE__));
-define( 'PLUGIN', plugin_basename(__FILE__));
-
 /**
  * This code that runs during plugin activation.
 */
 function activate_myplugin(): void {
-	Activate::activate();
+	sandeep\Base\Activate::activate();
 }
+register_activation_hook( __FILE__, 'activate_myplugin');;
 
 /**
  * This code that runs during plugin deactivation.
  */
 function deactivate_myplugin(): void {
-	Deactivate::deactivate();
+	sandeep\Base\Deactivate::deactivate();
 }
-
-
-register_activation_hook( __FILE__, 'activate_myplugin');;
 register_deactivation_hook( __FILE__, 'deactivate_myplugin');;
 
 /**

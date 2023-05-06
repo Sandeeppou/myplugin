@@ -5,9 +5,12 @@
 
 namespace sandeep\Base;
 
-class Settings{
+use \sandeep\Base\BaseController;
+
+class Settings extends \sandeep\Base\BaseController {
 	public function register(): void {
-		add_filter( "plugin_action_links_". PLUGIN, array($this, 'settings' ) );
+
+		add_filter( "plugin_action_links_$this->plugin", array($this, 'settings' ) );
 	}
 
 	public function settings( $links ){
