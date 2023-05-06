@@ -1,0 +1,19 @@
+{
+    "name": "sandeep/myplugin",
+    "description": "First plugin design",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Sandeep",
+            "email": "sandeep.poudel@my.jcu.edu.au"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "sandeep\\": "./includes"
+        }
+    }
+}
